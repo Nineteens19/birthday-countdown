@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5faf7; /* เขียวอ่อน very light */
+  font-family: 'Quicksand', sans-serif;
+  color: #2a4d3b; /* เขียวเข้ม */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: #ffffff; /* ขาวสะอาด */
+  padding: 60px 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(42, 77, 59, 0.15);
+  width: 720px;
+  user-select: none;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #2a4d3b;
+  letter-spacing: 1.5px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.time-box {
+  background: #f0f7f3; /* เขียวอ่อนจาง */
+  border: 2px solid #71b376; /* เส้นขอบเขียวมินิมอล */
+  border-radius: 16px;
+  padding: 15px 12px;
+  flex: 1;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.time-box:hover {
+  box-shadow: 0 8px 20px rgba(113, 179, 118, 0.35);
+  transform: translateY(-6px);
+}
+
+.number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2a4d3b;
+  line-height: 1;
+  animation: gentleBounce 1.5s ease-in-out infinite;
+  user-select: text;
+}
+
+.label {
+  font-size: 1.1rem;
+  color: #4b7a5f;
+  margin-top: 5px;
+  display: block;
+}
+
+.footer-text {
+  margin-top: 28px;
+  font-size: 1rem;
+  color: #4b7a5f;
+  font-weight: 500;
+}
+
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.congrats-message {
+    color: #2a4d3b;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 20px;
+    border-radius: 20px;
+    background: #e0f2e9;
+    box-shadow: 0 6px 18px rgba(42, 77, 59, 0.2);
+    user-select: none;
+  }
+  
+  .congrats-message h2 {
+    margin: 0 0 12px 0;
+  }
+  
+  .congrats-message p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #4b7a5f;
+  }
+  
